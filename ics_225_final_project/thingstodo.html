@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Explore MN: A Simple Guide</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#p_mallofamerica,#p_voyageur,#p_duluth").hide();
+            $("#h_mallofamerica").hover(
+                function () { $("#p_mallofamerica").fadeIn() },
+                function () { $("#p_mallofamerica").fadeOut() }
+            );
+            $("#h_voyageur").hover(
+                function () { $("#p_voyageur").fadeIn() },
+                function () { $("#p_voyageur").fadeOut() }
+            );
+            $("#h_duluth").hover(
+                function () { $("#p_duluth").fadeIn() },
+                function () { $("#p_duluth").fadeOut() }
+            );
+        });
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo" style="height: 150px;">
+                <div id="logo_text">
+                    <h1><a href="index.html"><span class="logo_colour">Minnesota Welcomes You!</span></a></h1>
+                    <h2 style="height: 10px;padding-top: 0px;margin-left: 30%;">
+                        Simple Guide For Travellers
+                    </h2>
+                </div>
+            </div>
+            <div id="menubar" style="padding-bottom: 0px;border-bottom-width: 50px;">
+                <ul id="menu">
+                    <li><a href="aboutmn.html" style=" padding-top: 0px; padding-right: 10px; padding-bottom:15px; padding-left: 20px;">
+                            About Minnesota
+                        </a>
+                    </li>
+                    <li><a href="placestostay.html" style="padding-left: 5px;padding-right: 10px;padding-top: 0px;">
+                            Places To Stay
+                        </a>
+                    </li>
+                    <li><a href="thingstodo.html" style="padding-top: 0px;padding-left: 5px;padding-right: 10px;">
+                            Things To Do
+                        </a>
+                    </li>
+                    <li><a href="waystoexplore.html" style="padding-left: 5px;padding-top: 0px;padding-right: 10px;">
+                            Ways To Explore
+                        </a>
+                    </li>
+                    <li><a href="wheretoeat.html" style="padding-left: 5px;padding-right: 10px;padding-top: 0px;">
+                            Where To Eat
+                        </a>
+                    </li>
+                    <li><a href="contactus.html" style=" padding-left: 5px; padding-top: 0px; padding-right: 10px;">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content_header"></div>
+        <br><br><br><br><br><br><br><br>
+
+        <div id="site_content" style="width: 850px;">
+            <div id="content">
+                <h1 style="width: 850px;padding-top: 0px;padding-left: 0px;FONT-WEIGHT: 1500; font-size: 250%;font-weight: bold;">
+                    THINGS TO DO</h1>
+                <p style=" height: 70px;WIDTH: 800px;">
+                    We Minnesotans are proud of our diversity. Our state
+                    has a rich history of welcoming people from
+                    different walks of life. As a result, you will be able to find something that may interest you.
+                    Below are top 3 tourtist attractions that you may enjoy.</p>
+            </div>
+        </div>
+        <div id="site_content" style="width: 850px;">
+            <div id="content">
+                <h1 style="width: 850px;padding-top: 0px;padding-left: 0px;FONT-WEIGHT: 1500; font-size: 100%;font-weight: bold;">
+                    Hover On The Header To Learn More...</h1>
+            </div>
+        </div>
+
+
+        <div id="site_content" style="width: 850px;">
+            <div id="content">
+                <h1 id="h_mallofamerica" style="width: 850px;padding-top: 0px;padding-left: 0px;FONT-WEIGHT: 1500;font-size: 250%;font-weight: bold;text-decoration: underline;">
+                    MALL OF AMERICA</h1>
+                <p id="p_mallofamerica" style="height: 320px;WIDTH: 800px;"><img src="moa.jpeg" alt="msp-sp" style="width: 350px;height: 250px;margin-right:15px;">More
+                    than 40 million people visit the Mall of America, 10 miles south of Minneapolis, each year. The
+                    nation's biggest mall has more than 500 stores, dozens of restaurants, an indoor amusement
+                    park, an aquarium and a butterfly garden. A little planning before your outing will ensure you're
+                    not overwhelmed. Go to the mall's website
+                    for information on store locations, hours, parking, events and promotions—and a handy coupon book.
+                    Be sure to wear comfortable shoes, and leave your coat in the car (the mall is 70 degrees
+                    year-round).</p>
+            </div>
+        </div>
+
+
+        <div id="site_content" style="width: 850px;">
+            <div id="content">
+                <h1 id="h_voyageur" style="width: 850px;padding-top: 0px;padding-left: 0px;FONT-WEIGHT: 1500;font-size: 250%;font-weight: bold;text-decoration: underline;">
+                    VOYAGEURS NATIONAL PARK</h1>
+                <p id="p_voyageur" style="height: 320px;WIDTH: 800px;"><img src="voyageurs.jpeg" alt="msp-sp" style="width: 350px;height: 250px;margin-right:15px;">How
+                    do you get around a 218,000-acre national park that doesn't have any roads? The answer is the main
+                    reason people visit this park on the Canadian border: boats. To explore Voyageurs' 30-some lakes
+                    (Rainy and Namekan are the biggest) and find the solitude this
+                    park is famous for, you need something that floats. Some folks spend a day on a guided walleye
+                    fishing trip and stay at a resort in one of the shore towns of International Falls (population
+                    5,900) or tiny Ranier (population 200). Others motor around on houseboats, watching for moose by
+                    day and anchoring at a different island each night for sunset and a campfire.</p>
+            </div>
+        </div>
+
+
+        <div id="site_content" style="width: 850px;">
+
+            <div id="content">
+                <h1 id="h_duluth" style="width: 850px;padding-top: 0px;padding-left: 0px;FONT-WEIGHT: 1500;font-size: 250%;font-weight: bold;text-decoration: underline;">
+                    DULUTH'S GREAT LAKE ATTRACTION</h1>
+                <p id="p_duluth" style=" height: 420px; WIDTH: 800px;"><img src="duluthpic.jpg" alt="msp-sp" style="width: 350px;height: 250px;margin-right:15px;">Duluth's
+                    Aerial Lift Bridge rises more than 20 times each day for boats—and skyscraper-size ships—traveling
+                    between Lake Superior and Duluth Harbor. No matter how many times you see it, the scene never gets
+                    old. At the Lake Superior Maritime Visitor Center, learn about the lake's shipping industry and try
+                    your hand on a pilothouse wheel. The Great Lakes Aquarium is home to playful otters, gigantic
+                    sturgeon and more.</p>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+        <div id="content_footer"></div>
+        <div id="footer">
+            <p><a href="index.html">Home</a> | <a href="aboutmn.html">About MN</a> | <a href="waystoexplore.html">Ways
+                    To Explore</a> |
+                <a href="thingstodo.html">Things To Do</a> | <a href="contact.html">Contact Us</a></p>
+            <p>Copyright Abrar Zawed | ICS 225 | Metropolitan State University, St.Paul </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Explore MN: A Simple Guide</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="scripts/script.js"></script>
+    <script>
+        function calculate() {
+            // Grab input from DOM
+            var value = document.getElementById("userinput").value;
+            var reg = new RegExp('^[a-zA-Z]+$');
+            var result = reg.test(value);
+
+            // Check if the input is empty
+            if (value == null || value == "") {
+                alert("No Input, Please Enter Breakfast, Lunch or Dinner");
+            }
+
+            // Check if the inputs is number
+            else if (result == false) {
+                alert("Please Enter Breakfast, Lunch or Dinner");
+            }
+
+            // Input is valid
+            else {
+                var breakfast = value.match(/breakfast/i);
+                var lunch = value.match(/lunch/i);
+                var dinner = value.match(/dinner/i);
+
+                if (breakfast) {
+                    window.open("https://www.tripadvisor.com/Restaurants-g43323-zfp2-Minneapolis_Minnesota.html");
+                }
+                else if (lunch) {
+                    window.open("https://www.tripadvisor.com/Restaurants-g43323-zfp30-Minneapolis_Minnesota.html");
+                }
+                else if (dinner) {
+                    window.open("https://www.tripadvisor.com/Restaurants-g43323-Minneapolis_Minnesota.html");
+
+                }
+                else {
+                    alert("Please Enter Breakfast, Lunch or Dinner")
+                }
+
+            }
+
+
+        }</script>
+    <style>
+        input[type=text], 
+        select {
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+                        
+                
+                        
+        #test {
+                    border-radius: 5px;
+                    background-color: #f2f2f2;
+                    padding: 100px;
+            }
+        .button {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 15px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo" style="height: 150px;">
+                <div id="logo_text">
+                    <h1><a href="index.html"><span class="logo_colour">Minnesota Welcomes You!</span></a></h1>
+                    <h2 style="height: 10px;padding-top: 0px;margin-left: 30%;">
+                        Simple Guide For Travellers
+                    </h2>
+                </div>
+            </div>
+            <div id="menubar" style="padding-bottom: 0px;border-bottom-width: 50px;">
+                <ul id="menu">
+                    <li><a href="aboutmn.html" style=" padding-top: 0px; padding-right: 10px; padding-bottom:15px; padding-left: 20px;">
+                            About Minnesota
+                        </a>
+                    </li>
+                    <li><a href="placestostay.html" style="padding-left: 5px;padding-right: 10px;padding-top: 0px;">
+                            Places To Stay
+                        </a>
+                    </li>
+                    <li><a href="thingstodo.html" style="padding-top: 0px;padding-left: 5px;padding-right: 10px;">
+                            Things To Do
+                        </a>
+                    </li>
+                    <li><a href="waystoexplore.html" style="padding-left: 5px;padding-top: 0px;padding-right: 10px;">
+                            Ways To Explore
+                        </a>
+                    </li>
+                    <li><a href="wheretoeat.html" style="padding-left: 5px;padding-right: 10px;padding-top: 0px;">
+                            Where To Eat
+                        </a>
+                    </li>
+                    <li><a href="contactus.html" style="padding-left: 5px;padding-top: 0px;padding-right: 10px;">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content_header"></div>
+        <br><br><br><br><br><br><br><br><br><br>
+
+
+        <div id="site_content" style="width: 850px;padding-bottom: 100px;height: 550px;">
+
+            <div id="content">
+                <h1 style="width: 850px;padding-top: 0px;padding-left: 0px;FONT-WEIGHT: 1500;font-size: 250%;font-weight: bold; text-align: center;">Search
+                    For Breakfast, Lunch or Dinner
+                </h1>
+
+                <div id="test" style="text-align:center;margin-left: 180px;width: 500px;height: 170px;padding-top: 50px;padding-bottom: 0px;">
+                    <form>
+
+                        <input type="text" id="userinput" name="user" placeholder="Enter Breakfast, Lunch, Dinner...">
+
+                        <button class=" button" onclick="calculate();">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="content_footer"></div>
+        <div id="footer">
+            <p><a href="index.html">Home</a> | <a href="aboutmn.html">About MN</a> | <a href="waystoexplore.html">Ways
+                    To Explore</a> |
+                <a href="thingstodo.html">Things To Do</a> | <a href="contact.html">Contact Us</a></p>
+            <p>Copyright Abrar Zawed | ICS 225 | Metropolitan State University, St.Paul </p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
